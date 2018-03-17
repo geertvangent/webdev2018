@@ -16,8 +16,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="226">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <marker date="1521283358000" expanded="true" signature="1266:1349" ph="..." />
                 <marker date="1521283358000" expanded="true" signature="1413:1574" ph="..." />
@@ -197,7 +197,7 @@
       <updated>1520669606865</updated>
       <workItem from="1520669608790" duration="7912000" />
       <workItem from="1520694688795" duration="27000" />
-      <workItem from="1521276497548" duration="4529000" />
+      <workItem from="1521276497548" duration="4587000" />
     </task>
     <task id="LOCAL-00001" summary="what I CHANGED IN THIS VERSION">
       <created>1521285044256</created>
@@ -206,11 +206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521285044256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="what I CHANGED IN THIS VERSION">
+      <created>1521285082558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521285082558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12468000" />
+    <option name="totallyTimeSpent" value="12526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1004" height="705" extended-state="0" />
@@ -373,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="226">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <marker date="1521283358000" expanded="true" signature="1266:1349" ph="..." />
             <marker date="1521283358000" expanded="true" signature="1413:1574" ph="..." />
