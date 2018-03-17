@@ -30,10 +30,6 @@
             echo "&copy; Geert Van Gent";
         }
 
-
-
-
-
  };
 
 

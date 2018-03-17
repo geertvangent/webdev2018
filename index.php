@@ -1,4 +1,5 @@
-<? include 'pages/pagebuilder.php' ?>
+<?php include 'pages/pagebuilder.php' ?>
+<?php include 'pages/newClass.php' ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -23,35 +24,37 @@
         <!-- Add your site or application content here -->
 
         <header>
-            <h1><? PageBuilder::showTitle(); ?></h1>
+            <h1>
+                <?php PageBuilder::showTitle(); ?>
+            </h1>
+
             <nav>
-                <?
+                <?php
                     PageBuilder::showNav();
                 ?>
             </nav>
         </header>
 
         <main>
-            <?
+            <?php
                 PageBuilder::showMain();
+                $superHeroMan = new NewClass("nestring");
+                $superHeroMan -> canFly();
             ?>
-
-
         </main>
 
         <aside>
-            <?
+            <?php
                 PageBuilder::showAside();
             ?>
-
         </aside>
 
         <footer>
-        <?php
-                PageBuilder::showFooter();
-            /*$footer = new Footer();
-            $footer->showFooter();*/
-        ?>
+            <?php
+                  PageBuilder::showFooter();
+                /*$footer = new Footer();
+                $footer->showFooter();*/
+            ?>
         </footer>
 
         <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
