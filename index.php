@@ -1,4 +1,5 @@
-<? include 'pages/pagebuilder.php' ?>
+<?php include 'pages/pagebuilder.php' ?>
+<?php include 'pages/newClass.php' ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -23,27 +24,29 @@
         <!-- Add your site or application content here -->
 
         <header>
-            <h1><? PageBuilder::showTitle(); ?></h1>
+            <h1><?php PageBuilder::showTitle(); ?></h1>
             <nav>
-                <?
+                <?php
                     PageBuilder::showNav();
                 ?>
             </nav>
         </header>
 
         <main>
-            <?
+            <?php
                 PageBuilder::showMain();
+            ?>
+            <?php
+                $superHeroMan = new NewClass("nestring");
             ?>
 
 
         </main>
 
         <aside>
-            <?
+            <?php
                 PageBuilder::showAside();
             ?>
-
         </aside>
 
         <footer>
@@ -55,7 +58,7 @@
         </footer>
 
         <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
