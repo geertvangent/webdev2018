@@ -51,10 +51,8 @@
 
         <footer>
         <?php
-                PageBuilder::showFooter();
-            /*$footer = new Footer();
-            $footer->showFooter();*/
-        ?>
+           echo  "h llo";
+           ?>
         </footer>
 
         <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
