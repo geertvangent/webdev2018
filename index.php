@@ -1,4 +1,4 @@
-<? include 'pages/pagebuilder.php' ?>
+<?php include 'pages/pagebuilder.php' ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -23,16 +23,16 @@
         <!-- Add your site or application content here -->
 
         <header>
-            <h1><? PageBuilder::showTitle(); ?></h1>
+            <h1><?php PageBuilder::showTitle(); ?></h1>
             <nav>
-                <?
+                <?php
                     PageBuilder::showNav();
                 ?>
             </nav>
         </header>
 
         <main>
-            <?
+            <?php
                 PageBuilder::showMain();
             ?>
 
@@ -40,7 +40,7 @@
         </main>
 
         <aside>
-            <?
+            <?php
                 PageBuilder::showAside();
             ?>
 
