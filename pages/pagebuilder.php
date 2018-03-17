@@ -27,7 +27,7 @@
      }
 
      static function showFooter(){
-            echo "&copy; Geert Van Gent";
+            echo "&copy; Jonas Laurens";
         }
 
 
