@@ -35,6 +35,9 @@
             <?php
                 PageBuilder::showMain();
             ?>
+            <?php
+                $superHeroMan = New NewClass("nestring");
+            ?>
 
 
         </main>
