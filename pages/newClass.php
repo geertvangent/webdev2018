@@ -24,5 +24,4 @@ class NewClass {
 
 }
 
-// test test
 ?>
