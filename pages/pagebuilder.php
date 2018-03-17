@@ -33,26 +33,9 @@
      static function showFooter(){
             echo "&copy; Koen Corneillie";
         }
-/*
-    //klasse is het grondplan voor het maken van een object
-     //single line comments
-     /*Multi line comments
-    class NewClass{
-         const SUPERHERO = "Philippe";
-         private $necessaryData;
 
-         //Constructor is de fundering van het huis
-        function __consttruct($data){
-            //altijd een dollar voor een this
-            //geen dollar voor necessarydataz want variabele
-            $this->necessaryData;
-        }
 
-         function canFly(){
-             echo "Tjilp";
-         }
- }
-*/
+
 
 
  };
