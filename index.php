@@ -1,13 +1,18 @@
-<? include 'pages/pagebuilder.php' ?>
+<?php
+        include 'pages/pagebuilder.php';
+        //include 'pages/pageBuilderNonAbstract.php';
+        include 'pages/newclass.php';
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+
+        <title>hello world</title>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -23,27 +28,25 @@
         <!-- Add your site or application content here -->
 
         <header>
-            <h1><? PageBuilder::showTitle(); ?></h1>
-            <nav>
-                <?
-                    PageBuilder::showNav();
-                ?>
-            </nav>
+            <h1><?php PageBuilder::showTitle(); ?></h1>
+            <nav><?php PageBuilder::showNav(); ?></nav>
         </header>
 
         <main>
-            <?
-                PageBuilder::showMain();
-            ?>
+            <?php
+            PageBuilder:: showMain();
 
+            /*STATIC
+                   NewClass:: canFly();
+            */   /* var aangemaakt             datatype meegegeven? */
+            $superHeroMan = new NewClass("nestring");
+            $superHeroMan->canFly();
+            ?>
 
         </main>
 
         <aside>
-            <?
-                PageBuilder::showAside();
-            ?>
-
+            <?php PageBuilder::showAside(); ?>
         </aside>
 
         <footer>

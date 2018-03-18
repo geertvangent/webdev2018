@@ -15,23 +15,23 @@
     }
 
     static function showTitle(){
-        echo "Title";
+        echo 'Title';
     }
 
     static function showNav(){
-        echo "Navigation";
+        echo 'Navigation';
     }
 
     static function showMain(){
-        echo "Main";
+        echo 'Main';
     }
 
     static function showAside(){
-        echo "Aside";
+        echo 'Aside';
     }
 
     static function showFooter(){
-        echo "&copy; Geert Van Gent";
+        echo '&copy; &Delta;BEL';
     }
 
 
@@ -39,7 +39,3 @@
 
 
 };
-
-
-
-?>
