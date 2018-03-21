@@ -1,7 +1,7 @@
 <?php
-        include 'pages/pagebuilder.php';
-        //include 'pages/pageBuilderNonAbstract.php';
-        include 'pages/newclass.php';
+        include 'classes/pagebuilder.php';
+        //include 'classes/pageBuilderNonAbstract.php';
+        include 'classes/newclass.php';
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -33,15 +33,21 @@
         </header>
 
         <main>
-            <?php
-            PageBuilder:: showMain();
-
-            /*STATIC
-                   NewClass:: canFly();
-            */   /* var aangemaakt             datatype meegegeven? */
-            $superHeroMan = new NewClass("nestring");
-            $superHeroMan->canFly();
-            ?>
+            <ul>
+                <li>
+                    <?php
+                    /* STATIC opvraging */
+                    PageBuilder:: showMain();
+                    ?>
+                </li>
+                <li> <?php
+                    $superHeroMan = new NewClass("nestring");
+                    $superHeroMan->canFly();
+                    ?>
+                </li>
+                <li>
+                </li>
+            </ul>
 
         </main>
 
@@ -50,11 +56,7 @@
         </aside>
 
         <footer>
-        <?php
-                PageBuilder::showFooter();
-            /*$footer = new Footer();
-            $footer->showFooter();*/
-        ?>
+        <?php PageBuilder::showFooter(); ?>
         </footer>
 
         <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->

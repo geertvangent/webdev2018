@@ -31,7 +31,7 @@
     }
 
     static function showFooter(){
-        echo '&copy; &Delta;BEL';
+        echo '&copy; &Delta;bel';
     }
 
 

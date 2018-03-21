@@ -4,6 +4,7 @@ examen tip
 - camelCase : functie
 - PascalCase : klasse
 - Upper : constanten 'CONST'
+ *
  */
 /*
 Recap--
@@ -41,6 +42,10 @@ CRUD: create read update delete
 
 
  */
+
+/* enkel includen, niet meer in index */
+include 'robot.php';
+
                 // PascalCase
  abstract class PageBuilder{
 
@@ -58,7 +63,16 @@ CRUD: create read update delete
      }
 
      static function showMain(){
-         echo 'Main';
+         /* nieuwe robot (object) aangemaakt met een battery waarde */
+         $showRobot = new Robot( 5);
+         /* print */
+         echo $showRobot->maakZichtbaar();
+
+         $showRobot2 = new Robot(20);
+         echo $showRobot2->maakZichtbaar();
+
+         $showRobot->fight($showRobot2);
+
      }
 
      static function showAside(){
@@ -66,7 +80,7 @@ CRUD: create read update delete
      }
 
      static function showFooter(){
-            echo '&copy; &Delta;BEL';
+            echo '&copy; &Delta;bel';
         }
 
  };

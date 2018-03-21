@@ -16,13 +16,15 @@ class NewClass{
     */
     private $necessaryData;
 
-    /* __con (parameter) : de basis  */
-    function  __construct($data){
+    /* __con (parameter) : de basis (How2Build)
+        is altijd public
+        __ (< magic method) */
+    public function  __construct($data){
         $this->necessaryData = $data;
     }
 
     function canFly(){
-        echo ' Bang';
+        echo ' Bang ';
     }
 
 
