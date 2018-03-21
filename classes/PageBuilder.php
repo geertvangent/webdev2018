@@ -1,4 +1,7 @@
 <?php
+
+    include "Robot.php";
+
 /**
  * Created by PhpStorm.
  * User: geertvangent
@@ -20,6 +23,13 @@
 
      static function showMain(){
          echo "Main";
+         $superRobot1 = new \RobotWar\Robot("Alex", 500);
+         $superRobot2 = new \RobotWar\Robot("Tom", 350);
+         echo $superRobot1->maakZichtbaar();
+         echo $superRobot2->maakZichtbaar();
+         $superRobot1->fight($superRobot2);
+         echo $superRobot1->maakZichtbaar();
+         echo $superRobot2->maakZichtbaar();
      }
 
      static function showAside(){
@@ -27,7 +37,7 @@
      }
 
      static function showFooter(){
-            echo "&copy; Geert Van Gent";
+            echo "Geert Van Gent";
         }
 
 
