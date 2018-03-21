@@ -1,4 +1,5 @@
 <?php
+include "classes/robot.php";
 /**
  * Created by PhpStorm.
  * User: geertvangent
@@ -20,6 +21,15 @@
 
      static function showMain(){
          echo "Main";
+         echo "<br>";
+         $newRobot = new Robot(100);
+         echo $newRobot->maakZichtbaar();
+
+         $ultraRobot = new Robot(1000);
+         echo $ultraRobot->maakZichtbaar();
+
+         $ultraRobot->fight($newRobot);
+
      }
 
      static function showAside(){
@@ -27,11 +37,8 @@
      }
 
      static function showFooter(){
-            echo "&copy; Maarten Alles";
-        }
-
-
-
+         echo "&copy; Maarten Alles";
+     }
 
 
  };

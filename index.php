@@ -1,5 +1,7 @@
-<?php include 'pages/pagebuilder.php' ?>
-<?php include 'pages/newClass.php' ?>
+<?php
+include 'classes/pagebuilder.php';
+include 'classes/newClass.php';
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -41,8 +43,7 @@
                 $superHeroMan = new NewClass("ne string");
                 $superHeroMan->canFly();
             ?>
-
-
+            <br>
 
         </main>
 
