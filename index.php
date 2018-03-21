@@ -1,5 +1,5 @@
-<?php include 'pages/pagebuilder.php' ?>
-<?php include 'pages/NewClass.php' ?>
+<?php include 'Classes/pagebuilder.php' ?>
+<?php include 'Classes/NewClass.php' ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -35,11 +35,6 @@
         <main>
             <?php
                 PageBuilder::showMain();
-            ?>
-            <?php
-            $superHeroMan= new NewClass("dit is een string");
-            $superHeroMan->canFly();
-
             ?>
 
 
