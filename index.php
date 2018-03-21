@@ -1,4 +1,5 @@
-<?php include 'pages/pagebuilder.php' ?>
+<?php include 'classes/pagebuilder.php' ?>
+<?php include 'classes/newClass.php' ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -39,6 +40,11 @@
                 $superHeroMan = New NewClass("nestring");
             ?>
 
+            <?php
+
+                PageBuilder::showRobot();
+
+            ?>
 
         </main>
 
