@@ -11,7 +11,6 @@
     public $id = 0;
 
     public function __construct(){
-
     }
 
     static function showTitle(){

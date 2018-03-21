@@ -1,5 +1,6 @@
-<?php include 'pages/pagebuilder.php' ?>
+<?php include 'classes/pagebuilder.php' ?>
 <?php include 'newClass.php'?>
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -38,6 +39,16 @@
     ?>
     <?php
     $superHeroMan= new NewClass( "nestring");
+    ?>
+    <?php
+    $superRobot = new Robot( 5); /*object aanmaken*/
+    $superRobot->maakZichtbaar(); /*object een functie geven*/
+
+    $uberRobot = new Robot( 20);
+    $uberRobot->maakZichtbaar();
+    $uberRobot->fight($superRobot);
+
+    /*echte robot aanmaken en hem een batterijwaarde meegeven.*/
     ?>
 
 

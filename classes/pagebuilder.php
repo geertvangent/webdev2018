@@ -1,3 +1,5 @@
+<?php include 'robot.php' ?>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -20,6 +22,13 @@
 
      static function showMain(){
          echo "Main";
+
+         $superRobot = new Robot ();
+         echo $superRobot->maakZichtbaar;
+
+         $uberRobot = new Robot ();
+         echo $uberRobot->maakZichtbaar;
+         )
      }
 
      static function showAside(){
