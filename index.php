@@ -45,6 +45,9 @@
                 PageBuilder::showAside();
                 echo  "Hallo PhP";
             ?>
+            <?php
+            echo "Hallo Sytra";
+            ?>
 
 
         </aside>
@@ -52,6 +55,7 @@
         <footer>
         <?php
            echo  "h llo";
+           echo  "Hallo Syntra ";
            ?>
         </footer>
 
