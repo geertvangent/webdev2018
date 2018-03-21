@@ -1,4 +1,4 @@
-<?php
+<?php include "robot.php";
 /**
  * Created by PhpStorm.
  * User: geertvangent
@@ -19,7 +19,18 @@ abstract class PageBuilder{
     }
 
     static function showMain(){
-        echo "Main";
+
+        $superRobot = new Robot(5);
+        echo $superRobot ->maakZichtbaar();
+
+        $ultraRobot = new Robot(20);
+        echo $ultraRobot ->maakZichtbaar();
+
+        $ultraRobot ->fight($superRobot);
+
+        $test = -5;
+        $test =- $test;
+        echo $test;
     }
 
     static function showAside(){

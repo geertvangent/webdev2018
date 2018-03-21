@@ -34,13 +34,8 @@
 
         <main>
             <?php
-                PageBuilder::showMain();
+            PageBuilder::showMain();
             ?>
-            <?php
-                $superHeroMan = new NewClass("nestring");
-                $superHeroMan->canFly();
-            ?>
-
         </main>
 
         <aside>
