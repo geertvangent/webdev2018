@@ -9,4 +9,6 @@
 class Weapon {
     private $_batteryDrain;
 }
+
+//comment
 ?>
