@@ -35,6 +35,17 @@
         }
 
 
+     static function showRobot(){
+         $superRobot = new Robot(9000);
+         echo $superRobot->maakZichtbaar();
+
+         $uberRobot = new Robot(100);
+         echo $uberRobot->maakZichtbaar();
+
+         echo $uberRobot->fight($superRobot);
+
+         echo $superRobot->fightTwo($uberRobot);
+     }
 
 
 

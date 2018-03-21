@@ -1,5 +1,6 @@
-<?php include 'pages/pagebuilder.php' ?>
-<?php include 'pages/newClass.php' ?>
+<?php include 'Classes/pagebuilder.php'; ?>
+<?php include 'Classes/newClass.php'; ?>
+<?php include 'Classes/Robot.php'; ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -40,8 +41,11 @@
                 //constructor functie aanroepen met klassenaam en functie
                 //ALTIJD TWEE UNDERSCORES VOOR CONSTRUCTOR ==> MAGIC FUNCTION
                 $superHeroMan = new NewClass('hallowkes');
-                superHeroMan->canFLy();
-                ?>
+                $superHeroMan->canFLy(); ?>
+            <br /><br />
+            <?php
+                PageBuilder::showRobot();
+            ?>
 
         </main>
 

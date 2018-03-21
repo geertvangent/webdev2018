@@ -79,7 +79,7 @@
 # ######################################################################
 
 # ----------------------------------------------------------------------
-# | Custom error messages/pages                                        |
+# | Custom error messages/Classes                                        |
 # ----------------------------------------------------------------------
 
 # Customize what Apache returns to the client in case of an error.
@@ -109,7 +109,7 @@ Options -MultiViews
 # | Document modes                                                     |
 # ----------------------------------------------------------------------
 
-# Force Internet Explorer 8/9/10 to render pages in the highest mode
+# Force Internet Explorer 8/9/10 to render Classes in the highest mode
 # available in the various cases when it may not.
 #
 # https://hsivonen.fi/doctype/#ie8
@@ -421,14 +421,14 @@ AddDefaultCharset utf-8
 # https://tools.ietf.org/html/rfc7034#section-2.1.
 #
 # Keep in mind that while you could send the `X-Frame-Options` header
-# for all of your website’s pages, this has the potential downside that
+# for all of your website’s Classes, this has the potential downside that
 # it forbids even non-malicious framing of your content (e.g.: when
 # users visit your website using a Google Image Search results page).
 #
 # Nonetheless, you should ensure that you send the `X-Frame-Options`
-# header for all pages that allow a user to make a state changing
-# operation (e.g: pages that contain one-click purchase links, checkout
-# or bank-transfer confirmation pages, pages that make permanent
+# header for all Classes that allow a user to make a state changing
+# operation (e.g: Classes that contain one-click purchase links, checkout
+# or bank-transfer confirmation Classes, Classes that make permanent
 # configuration changes, etc.).
 #
 # Sending the `X-Frame-Options` header can also protect your website
