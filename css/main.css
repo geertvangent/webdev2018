@@ -289,3 +289,11 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+body {
+    text-align: center;
+}
+
+main {
+    font-size: 25px;
+}

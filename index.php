@@ -1,5 +1,7 @@
-<?php include 'pages/pagebuilder.php' ?>
-<?php include 'pages/newClass.php' ?>
+<?php
+    include 'classes/pagebuilder.php';
+    include 'classes/newClass.php';
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -37,12 +39,25 @@
                 PageBuilder::showMain();
 
             ?>
-        </br>
+        <br>
             <?php
             //newClass::canFly();
             $superHeroMan = new NewClass("nestring");
-            $superHeroMan->canFly();
+            $superHeroMan->canFly()
+
             ?>
+            <br>
+            <br>
+
+
+            <?php
+                // robot
+                pageBuilder::showRobot(100);
+            ?>
+
+
+            <br>
+            <br>
         </main>
 
         <aside>
