@@ -6,6 +6,8 @@
  * Time: 10:03
  */
 
+include "robot.php";
+
  abstract class PageBuilder{
 
      public $id = 0;
@@ -19,7 +21,13 @@
      }
 
      static function showMain(){
-         echo "Main";
+         $robot = new Robot(5);
+         echo $robot->maakZichtbaar();
+
+         $robot2 = new Robot(20);
+         echo $robot2->maakZichtbaar();
+
+         $robot2->fight($robot);
      }
 
      static function showAside(){

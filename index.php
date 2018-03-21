@@ -1,5 +1,6 @@
-<? include 'pages/pagebuilder.php' ?>
-<? include 'pages/newClass.php' ?>
+<? include 'classes/pagebuilder.php' ?>
+<? include 'classes/newClass.php' ?>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -36,6 +37,14 @@
             <?
                 PageBuilder::showMain();
                 $superHeroMan = new NewClass("nescessary");
+
+
+            ?>
+            <br>
+
+            <?
+
+
             ?>
 
 
