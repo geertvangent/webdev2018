@@ -6,9 +6,15 @@
  * Time: 10:03
  */
 
-include 'robot.php';
 
- abstract class PageBuilder{
+include 'robot.php';
+include 'RobotWithSpeaker.php';
+include 'RobotWithSiren.php';
+
+/**
+ * Class PageBuilder
+ */
+abstract class PageBuilder{
 
      public $id = 0;
 
@@ -20,8 +26,34 @@ include 'robot.php';
          echo "Navigation";
      }
 
-     static function showMain() {
+    /**
+     * @throws Exception
+     */
+    static function showMain() {
          echo "Main";
+
+
+         $newArena = new Arena();
+
+         $newRobot = new Robot("Hypnodisc", 100);
+         echo $newRobot->maakZichtbaar();
+
+         $newRobot2 = new Robot("Chaos 2", 100);
+         echo $newRobot2->maakZichtbaar();
+
+
+         $newRobot->fight($newRobot2);
+
+         $newRobot3 = new RobotWithSpeaker("Killalot", 100, "stop");
+         echo $newRobot3->maakZichtbaar();
+         echo $newRobot3->scream();
+
+         $newRobot4 = new RobotWithSiren("Blijter", 20);
+         echo $newRobot4->maakZichtbaar();
+         echo $newRobot4->activate();
+
+         $newArena->addRobot();
+
      }
 
      static function showAside() {
@@ -32,14 +64,5 @@ include 'robot.php';
             echo "&copy; Jonas Laurens";
      }
 
-     static function showRobot() {
-         $newRobot = new Robot(100);
-         echo $newRobot->maakZichtbaar();
-
-         $uberRobot = new Robot(80);
-         echo $uberRobot->maakZichtbaar();
-
-         $newRobot->fight($uberRobot);
-     }
 
  };

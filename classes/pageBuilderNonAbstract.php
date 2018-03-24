@@ -6,7 +6,10 @@
  * Time: 10:03
  */
 
- class PageBuilder{
+/**
+ * Class PageBuilder
+ */
+ class PageBuilderNonAbstract{
 
     public $id = 0;
 

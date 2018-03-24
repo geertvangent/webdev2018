@@ -43,14 +43,15 @@ class Robot {
 
 
     /**
-     * @return string -> Put's the robot's current status on screen
+     * @return string -> Puts the robot's current status on screen
      */
-    function maakZichtbaar() {
+    public function maakZichtbaar() {
         if($this->_batteryPower < 0) {
             echo "This robot died";
-        }else {
-            return "This is a robot with ".$this->_batteryPower."% battery level <br> ";
         }
+
+        return $this->_name." is a robot with ".$this->_batteryPower."% battery level <br> ";
+
     }
 
 
@@ -58,7 +59,7 @@ class Robot {
      * @param Robot $opponent -> Takes the opponent's name
      * @throws Exception
      */
-    function fight(Robot $opponent) {
+    public function fight(Robot $opponent) {
         if(is_null($opponent)) {
             throw new Exception("No opponent");
         }
@@ -68,20 +69,20 @@ class Robot {
         $opponent->_batteryPower = $endValue2;
 
         if ($endValue < 0) {
-            $endValue = 0;
             echo "This Robot died";
         }else if ($endValue2 < 0) {
-            $endValue2 = 0;
             echo "The other Robot died <br> I'm dead";
         }
 
     }
 
 
+
+
     /**
      * @param Robot $opponent -> Takes the opponent's name
      */
-    function fight2(robot $opponent) {
+    public function fight2(Robot $opponent) {
         if ($this->_batteryPower <= $opponent->_batteryPower) {
             echo "This Robot died";
         }else if ($opponent->_batteryPower = $this->_batteryPower) {
@@ -92,13 +93,44 @@ class Robot {
     }
 
 
+    /*
+    public function fight3(Robot $myRobot, Robot $opponent) {
+        $myRobot->scream("stop");
+        $this->fight($opponent);
+    }
+
+    public function fight4(Robot) {
+
+    }
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * @param $oppenent -> Takes the opponent's name
      * @throws Exception
      */
-    function fights($oppenent) {
+    /*
+    public function fights($oppenent) {
         $hit = random_int(0, 100);
         $damage = $this->_batteryPower - $hit;
         echo "hit the opponent for ".$damage;
     }
+    */
+
+
+
+
 };

@@ -9,7 +9,9 @@
 
 // one line comment
 
-
+/**
+ * Class NewClass
+ */
 class NewClass {
     const superHero = "Barry Allen";
     private $necessaryData;

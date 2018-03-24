@@ -24,6 +24,19 @@ class name {
     public function __construct() {
 
     }
-
-
 }
+
+/*
+ * doc blocks
+ * @property -> marks the properties
+ * @returns -> shows the return of a function
+ * @param -> shows the parameters the function takes
+ * @throws -> gives back what is thrown
+ */
+
+/*
+ *
+ * Defensief  -> throws
+ * Contactueel -> don't care
+ * Totaal -> never throws
+*/

@@ -1,6 +1,7 @@
 <?php
     include 'classes/pagebuilder.php';
     include 'classes/newClass.php';
+    include 'classes/arena.php';
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -39,25 +40,17 @@
                 PageBuilder::showMain();
 
             ?>
-        <br>
+
+
+            <br>
+
             <?php
             //newClass::canFly();
             $superHeroMan = new NewClass("nestring");
             $superHeroMan->canFly()
 
             ?>
-            <br>
-            <br>
 
-
-            <?php
-                // robot
-                pageBuilder::showRobot(100);
-            ?>
-
-
-            <br>
-            <br>
         </main>
 
         <aside>
@@ -78,6 +71,7 @@
         <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

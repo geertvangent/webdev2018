@@ -6,10 +6,11 @@
  * Time: 19:32
  */
 
+/**
+ * Class Weapon
+ */
 class Weapon {
 
     private $_drain;
-
-
 
 }
