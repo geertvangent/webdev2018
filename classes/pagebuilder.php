@@ -10,6 +10,7 @@
 include 'robot.php';
 include 'RobotWithSpeaker.php';
 include 'RobotWithSiren.php';
+include 'Arena.php';
 
 /**
  * Class PageBuilder
@@ -33,31 +34,28 @@ abstract class PageBuilder{
          echo "Main";
 
 
-         $newArena = new Arena();
+        $newArena = new Arena();
 
-         $newRobot = new Robot("Hypnodisc", 100);
-         echo $newRobot->maakZichtbaar();
+        $newRobot = new Robot("Hypnodisc", 100);
+        $newRobot2 = new Robot("Chaos 2", 100);
+        $newRobot3 = new RobotWithSpeaker("Killalot", 100, "stop");
+        $newRobot4 = new RobotWithSiren("Blijter", 20);
 
-         $newRobot2 = new Robot("Chaos 2", 100);
-         echo $newRobot2->maakZichtbaar();
+        echo $newRobot->maakZichtbaar();
+        echo $newRobot2->maakZichtbaar();
+        echo $newRobot3->maakZichtbaar();
+        echo $newRobot4->maakZichtbaar();
 
+        $newRobot->fight($newRobot2);
+        echo $newRobot3->scream();
+        echo $newRobot4->activate();
 
-         $newRobot->fight($newRobot2);
-
-         $newRobot3 = new RobotWithSpeaker("Killalot", 100, "stop");
-         echo $newRobot3->maakZichtbaar();
-         echo $newRobot3->scream();
-
-         $newRobot4 = new RobotWithSiren("Blijter", 20);
-         echo $newRobot4->maakZichtbaar();
-         echo $newRobot4->activate();
-
-         $newArena->addRobot();
+        $newArena->addRobot($newRobot3);
 
      }
 
      static function showAside() {
-         echo "Aside";
+        echo "Aside";
      }
 
      static function showFooter() {

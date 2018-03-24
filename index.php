@@ -1,7 +1,6 @@
 <?php
     include 'classes/pagebuilder.php';
     include 'classes/newClass.php';
-    include 'classes/arena.php';
 ?>
 <!doctype html>
 <html class="no-js" lang="">

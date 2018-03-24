@@ -16,11 +16,11 @@ class RobotWithSpeaker extends Robot {
     /**
      * RobotWithSpeaker constructor.
      * @param string $name
-     * @param int $battery
+     * @param int $batteryPower
      * @param string $quote
      */
-    public function __construct(string $name, int $battery, string $quote){
-        parent::__construct($name, $battery);
+    public function __construct(string $name, int $batteryPower, string $quote){
+        parent::__construct($name, $batteryPower);
         $this->quote = $quote;
     }
 

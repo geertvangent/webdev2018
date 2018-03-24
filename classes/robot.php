@@ -33,11 +33,11 @@ class Robot {
     /**
      * Robot constructor.
      * @param string $name -> Initial robot's name
-     * @param int $battery -> Initial robot's battery power
+     * @param int $batteryPower -> Initial robot's battery power
      */
-    public function __construct(string $name, int $battery) {
+    public function __construct(string $name, int $batteryPower) {
         $this->_name = $name;
-        $this->_batteryPower = $battery;
+        $this->_batteryPower = $batteryPower;
         $this->_weapon = new Weapon();
     }
 
@@ -49,9 +49,7 @@ class Robot {
         if($this->_batteryPower < 0) {
             echo "This robot died";
         }
-
         return $this->_name." is a robot with ".$this->_batteryPower."% battery level <br> ";
-
     }
 
 
@@ -65,14 +63,18 @@ class Robot {
         }
         $endValue = $this->_batteryPower - $opponent->_batteryPower;
         $endValue2 = $opponent->_batteryPower - $this->_batteryPower;
+
         $this->_batteryPower = $endValue;
         $opponent->_batteryPower = $endValue2;
 
-        if ($endValue < 0) {
+        if ($endValue <= 0) {
             echo "This Robot died";
-        }else if ($endValue2 < 0) {
+        }else{
             echo "The other Robot died <br> I'm dead";
         }
+
+        echo $endValue;
+        echo $endValue2;
 
     }
 

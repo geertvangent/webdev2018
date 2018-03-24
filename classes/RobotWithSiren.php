@@ -14,10 +14,10 @@ class RobotWithSiren extends Robot {
     /**
      * RobotWithSiren constructor.
      * @param string $name
-     * @param int $battery
+     * @param int $batteryPower
      */
-    public function __construct(string $name, int $battery){
-        parent::__construct($name, $battery);
+    public function __construct(string $name, int $batteryPower){
+        parent::__construct($name, $batteryPower);
     }
 
 
