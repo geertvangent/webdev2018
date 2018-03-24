@@ -27,7 +27,7 @@
      }
 
      static function showAside(){
-         echo "snorfiets";
+         echo "aside";
      }
 
      static function showFooter(){
@@ -36,15 +36,32 @@
 
 
      static function showRobot(){
-         $superRobot = new Robot(9000);
+         $arena = new Arena();
+
+         $superRobot = new Robot("Super Robot", 9000);
          echo $superRobot->maakZichtbaar();
 
-         $uberRobot = new Robot(100);
+
+         $uberRobot = new Robot("Uber Robot", 200);
          echo $uberRobot->maakZichtbaar();
+
+         $newRobot = new RobotWithSpeaker("Snorfiets", 9000, "I don't wanna fight no mo! <br />");
+         echo $newRobot->maakZichtbaar();
+         $newRobot->scream();
+
+         $sirenRobot = new RobotWithSiren("Luiden Aap", 100);
+         echo $sirenRobot->maakZichtbaar();
+         $sirenRobot->siren();
+
+         $arena->addRobot($uberRobot);
+         $arena->addRobot($superRobot);
+         $arena->addRobot($newRobot);
 
          echo $uberRobot->fight($superRobot);
 
          echo $superRobot->fightTwo($uberRobot);
+
+
      }
 
 

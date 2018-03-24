@@ -1,6 +1,7 @@
 <?php include 'Classes/pagebuilder.php'; ?>
 <?php include 'Classes/newClass.php'; ?>
-<?php include 'Classes/Robot.php'; ?>
+<?php include 'Classes/Arena.php' ?>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
