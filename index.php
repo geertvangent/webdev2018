@@ -36,7 +36,10 @@
 
         <main>
             <?php
+            try {
                 PageBuilder::showMain();
+            } catch (Exception $e) {
+            }
 
             ?>
 
