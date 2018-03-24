@@ -7,6 +7,8 @@
  */
 
 include "robot.php";
+include "robotWithSpeaker.php";
+include "robotWithSiren.php";
 
  abstract class PageBuilder{
 
@@ -28,6 +30,15 @@ include "robot.php";
          echo $robot2->maakZichtbaar();
 
          $robot2->fight($robot);
+
+
+         $robot3 = new RobotWithSPeaker(40, "stop");
+         echo $robot3->maakZichtbaar();
+         $robot3->scream();
+
+         $robot4 = new RobotWithSiren(80);
+         $robot4->activate();
+
      }
 
      static function showAside(){
