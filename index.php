@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -26,6 +27,15 @@
         <main>
             <?php
                 PageBuilder::showMain();
+                $superHeroMan = new NewClass("nescessary");
+
+
+            ?>
+            <br>
+
+            <?
+
+
             ?>
 
 
