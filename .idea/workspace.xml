@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f073b4d0-278f-47e0-8278-4c9c6f6e71d1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/robot.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/robotWithSirene.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/robotWithSpeaker.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/weapon.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/Arena.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pagebuilder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pagebuilder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/pagebuilder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="726">
               <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arena.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/Arena.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -60,6 +67,7 @@
         <option value="$PROJECT_DIR$/pages/robotWithSirene.php" />
         <option value="$PROJECT_DIR$/pages/robotWithSpeaker.php" />
         <option value="$PROJECT_DIR$/pages/pagebuilder.php" />
+        <option value="$PROJECT_DIR$/pages/Arena.php" />
       </list>
     </option>
   </component>
@@ -177,7 +185,7 @@
       <workItem from="1522180964847" duration="2252000" />
       <workItem from="1522217827233" duration="803000" />
       <workItem from="1522222694218" duration="949000" />
-      <workItem from="1522257715844" duration="1383000" />
+      <workItem from="1522257715844" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="add robot, weapon, robotwithspeaker and robotwithsirene">
       <created>1522182296789</created>
@@ -193,11 +201,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522218138509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add classes">
+      <created>1522259125473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522259125473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13326000" />
+    <option name="totallyTimeSpent" value="13779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -233,7 +248,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add robot, weapon, robotwithspeaker and robotwithsirene" />
     <MESSAGE value="add includes in pagebuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add includes in pagebuilder" />
+    <MESSAGE value="add classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -472,6 +488,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/Arena.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
