@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: geertvangent
- * Date: 10/03/2018
- * Time: 10:03
- */
 
- class PageBuilder{
+
+class PageBuilder{
 
     public $id = 0;
 
