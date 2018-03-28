@@ -9,11 +9,16 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+    padding: 0;
+    margin: 0;
+}
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
 }
 
 /*
@@ -294,6 +299,40 @@ body {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: darkslateblue;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+
+}
+
 main {
     font-size: 25px;
+    padding: 30px 15px;
+    background: aquamarine;
+    color: #212121;
+
+}
+
+aside {
+    background: crimson;
+    color: #fff;
+    padding: 15px;
+    font-size: 45px;
+}
+
+footer {
+    background: darkslateblue;
+    color: #fff;
+    padding: 15px;
 }
