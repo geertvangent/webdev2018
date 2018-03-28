@@ -1,4 +1,6 @@
-<?php
+<?php include "robot.php";
+        include  "robotWithSpeaker.php";
+        include  "robotWithSirene.php";
 /**
  * Created by PhpStorm.
  * User: geertvangent
@@ -19,7 +21,7 @@
      }
 
      static function showMain(){
-         
+
          $robot = new Robot(5);
          echo $robot->maakZichtbaar();
          $robot2 = new Robot(20);
