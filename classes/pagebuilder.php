@@ -1,14 +1,16 @@
 <?php
+
+    include "Robot.php";
+    include "RobotWithSpeaker.php";
+    include "RobotWithSirene.php";
+    include "Arena.php";
+
 /**
  * Created by PhpStorm.
  * User: geertvangent
  * Date: 10/03/2018
  * Time: 10:03
  */
-
-include "robot.php";
-include "robotWithSpeaker.php";
-include "robotWithSiren.php";
 
  abstract class PageBuilder{
 
@@ -23,22 +25,24 @@ include "robotWithSiren.php";
      }
 
      static function showMain(){
-         $robot = new Robot(5);
-         echo $robot->maakZichtbaar();
+         $arena = new \RobotWar\Arena();
 
-         $robot2 = new Robot(20);
+         echo "Main";
+         $superRobot1 = new \RobotWar\Robot("Alex", 500);
+         $superRobot2 = new \RobotWar\Robot("Tom", 350);
+         $robot1 = new \RobotWar\RobotWithSpeaker("Jan", 850,"Stop");
+         $robot2 = new \RobotWar\RobotWithSirene("Piet", 350);
+         echo $superRobot1->maakZichtbaar();
+         echo $superRobot2->maakZichtbaar();
+         $superRobot1->fight($superRobot2);
+         echo $superRobot1->maakZichtbaar();
+         echo $superRobot2->maakZichtbaar();
+         echo $robot1->maakZichtbaar();
+         $robot1->scream();
          echo $robot2->maakZichtbaar();
+         $robot2->activate();
 
-         $robot2->fight($robot);
-
-
-         $robot3 = new RobotWithSPeaker(40, "stop");
-         echo $robot3->maakZichtbaar();
-         $robot3->scream();
-
-         $robot4 = new RobotWithSiren(80);
-         $robot4->activate();
-
+         $arena->addRobot($robot1);
      }
 
      static function showAside(){
@@ -46,7 +50,7 @@ include "robotWithSiren.php";
      }
 
      static function showFooter(){
-            echo "&copy; Geert Van Gent";
+            echo "Geert Van Gent";
         }
 
 
