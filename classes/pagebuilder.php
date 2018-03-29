@@ -42,7 +42,7 @@
          echo $robot2->maakZichtbaar();
          $robot2->activate();
 
-         $arena->addRobot($robot1);
+         $arena->addRobot($superRobot1);
      }
 
      static function showAside(){
