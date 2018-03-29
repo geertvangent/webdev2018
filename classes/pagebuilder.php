@@ -41,7 +41,7 @@
          $robot1->scream();
          echo $robot2->maakZichtbaar();
          $robot2->activate();
-
+        //werkt nog niet
          $arena->addRobot($superRobot1);
      }
 
