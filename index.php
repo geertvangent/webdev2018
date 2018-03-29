@@ -27,7 +27,7 @@
         <main>
             <?php
                 PageBuilder::showMain();
-                $superHeroMan = new NewClass("nescessary");
+                $superHeroMan = new NewClass("nescessary"); 
 
 
             ?>
