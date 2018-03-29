@@ -1,15 +1,16 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: geertvangent
- * Date: 21/03/2018
- * Time: 19:32
+ * User: steve
+ * Date: 21-3-2018
+ * Time: 19:33
  */
 
-class Weapon{
+namespace RobotWar;
+
+
+class Weapon
+{
     private $_batteryDrain;
+
 }
-
-
-
-?>

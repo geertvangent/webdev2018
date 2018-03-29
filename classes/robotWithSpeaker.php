@@ -1,22 +1,32 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: geertvangent
- * Date: 24/03/2018
+ * User: steve
+ * Date: 24-3-2018
  * Time: 10:02
  */
 
-class RobotWithSPeaker extends Robot{
+namespace RobotWar;
 
-    private  $quote;
 
-    public function __construct(int $initialBattery, string $quote)
+class RobotWithSpeaker extends Robot
+{
+    private $quote;
+
+    public function __construct(string $name, int $batteryPower, string $quote)
     {
-        parent::__construct($initialBattery);
+        parent::__construct($name, $batteryPower);
         $this->quote = $quote;
     }
+    /*public function __construct(string $name, int $batteryPower)
+    {
 
-    public function scream(){
-        echo $this->quote;
+    }*/
+    public function scream()
+    {
+        echo $this->quote . "<br>";
+    }
+    public function makeSomeNoise(){
+        $this->scream();
     }
 }
