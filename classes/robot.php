@@ -44,7 +44,7 @@ class Robot
      * @return (string) -> puts the current robot status on the screen
      */
     public function maakZichtbaar(){
-        return "dit is een robot ".$this->_name." met ".$this->_batteryPower." batterij inhoud<br>";
+        return "Dit is een robot ".$this->_name." met ".$this->_batteryPower." batterij inhoud<br>";
 
     }
 
